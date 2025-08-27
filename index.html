@@ -8,9 +8,6 @@
 <!-- Background animation -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/vanta/dist/vanta.waves.min.js"></script>
-<script src="https://accounts.google.com/gsi/client" async defer></script>
-
-<div class="g_id_signin" data-type="standard"></div>
 
 <!-- Google Identity Services -->
 <script src="https://accounts.google.com/gsi/client" async defer></script>
@@ -81,11 +78,10 @@
     🚀 Secure Chat with Google Sign-In
   </p>
 
-<div id="g_id_onload"
-     data-client_id="YOUR_GOOGLE_CLIENT_ID_HERE"
-     data-callback="handleCredentialResponse"
-     data-auto_prompt="false"></div>
-<div class="g_id_signin" data-type="standard"></div>
+  <div id="g_id_onload"
+       data-client_id="GOOGLE_CLIENT_ID"
+       data-callback="handleCredentialResponse"
+       data-auto_prompt="false"></div>
   <div class="g_id_signin" data-type="standard" style="display:block;margin:0 auto;"></div>
   
   <div id="login-error" style="color:red;text-align:center;margin-top:15px;"></div>
