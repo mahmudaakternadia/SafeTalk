@@ -1,0 +1,26 @@
+# === Environment Variables ===
+.env
+
+# === Python cache / virtual env ===
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.pycache
+*.egg-info/
+.venv/
+venv/
+env/
+
+# === Logs ===
+*.log
+
+# === IDE / Editor files ===
+.vscode/
+.idea/
+*.swp
+
+# === OS specific ===
+.DS_Store
+Thumbs.db
+

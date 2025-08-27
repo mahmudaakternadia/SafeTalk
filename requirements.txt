@@ -1,0 +1,6 @@
+websockets
+requests
+better_profanity
+openai
+python-dotenv
+google-auth

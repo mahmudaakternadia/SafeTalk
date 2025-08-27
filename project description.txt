@@ -1,0 +1,131 @@
+# SafeTalk Chat Application
+
+A modern, safe group chat app with real-time moderation and a beautiful animated UI.
+
+## Features
+
+- Gmail-only login and unique email enforcement
+- Profanity and toxicity filtering (better_profanity + Hugging Face API)
+- Rate limiting and permanent bans for abuse
+- Animated glassmorphism UI (Vanta.js, Three.js)
+- Real-time chat with WebSockets
+- Logging of unsafe messages
+- Responsive design for desktop and mobile
+
+## Technologies Needed
+
+- **Python 3.8+**
+- **websockets** (for real-time server)
+- **requests** (for Hugging Face API calls)
+- **better_profanity** (local profanity filter)
+- **Hugging Face API key** (for toxicity moderation)
+- **HTML, CSS, JavaScript** (frontend)
+- **Vanta.js & Three.js** (animated background)
+
+## Setup Instructions
+
+1. **Install Python dependencies:**
+   ```sh
+   pip install websockets requests better_profanity
+   ```
+
+2. **Get a Hugging Face API key:**
+   - Sign up at [https://huggingface.co](https://huggingface.co)
+   - Create a token at [https://huggingface.co/settings/tokens](https://huggingface.co/settings/tokens)
+
+3. **Set your API key in the terminal:**
+   ```sh
+   set HF_API_KEY=your-huggingface-api-key-here
+   ```
+
+4. **Run the server:**
+   ```sh
+   python server.py
+   ```
+
+5. **Open `index.html` in your browser.**
+
+## File Structure
+
+- `server.py` — Python backend server
+- `index.html` — Frontend chat UI
+- `flagged_messages.log` — Log of blocked/unsafe messages
+
+## Limitations
+
+- No persistent database (user bans reset on server restart)
+- Only text chat (no media)
+- Free Hugging Face API has usage limits
+
+## Future Work
+
+- Add persistent storage (database)
+- Support more moderation models
+- Add file/image sharing
+- Build admin dashboard
+
+---
+```# SafeTalk Chat Application
+
+A modern, safe group chat app with real-time moderation and a beautiful animated UI.
+
+## Features
+
+- Gmail-only login and unique email enforcement
+- Profanity and toxicity filtering (better_profanity + Hugging Face API)
+- Rate limiting and permanent bans for abuse
+- Animated glassmorphism UI (Vanta.js, Three.js)
+- Real-time chat with WebSockets
+- Logging of unsafe messages
+- Responsive design for desktop and mobile
+
+## Technologies Needed
+
+- **Python 3.8+**
+- **websockets** (for real-time server)
+- **requests** (for Hugging Face API calls)
+- **better_profanity** (local profanity filter)
+- **Hugging Face API key** (for toxicity moderation)
+- **HTML, CSS, JavaScript** (frontend)
+- **Vanta.js & Three.js** (animated background)
+
+## Setup Instructions
+
+1. **Install Python dependencies:**
+   ```sh
+   pip install websockets requests better_profanity
+   ```
+
+2. **Get a Hugging Face API key:**
+   - Sign up at [https://huggingface.co](https://huggingface.co)
+   - Create a token at [https://huggingface.co/settings/tokens](https://huggingface.co/settings/tokens)
+
+3. **Set your API key in the terminal**
+   ```sh
+   set HF_API_KEY=your-huggingface-api-key-here
+   ```
+
+4. **Run the server:**
+   ```sh
+   python server.py
+   ```
+
+5. **Open `index.html` in your browser.**
+
+## File Structure
+
+- `server.py` — Python backend server
+- `index.html` — Frontend chat UI
+- `flagged_messages.log` — Log of blocked/unsafe messages
+
+## Limitations
+
+- No persistent database (user bans reset on server restart)
+- Only text chat (no media)
+- Free Hugging Face API has usage limits
+
+## Future Work
+
+- Add persistent storage (database)
+- Support more moderation models
+- Add file/image
